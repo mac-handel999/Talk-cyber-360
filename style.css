@@ -51,6 +51,19 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+   
+    text-shadow: var(--accent-glow);
+    padding: 5px;
+}
+
+nav a:active {
+    border:2px solid var(--accent-blue);
+    border-radius: 5px;
+    background-color: #fff;
+    text-shadow: var(--accent-glow);
+}
+
 main {
     max-width: 900px;
     margin: 2rem auto;
@@ -63,6 +76,10 @@ section {
     border-radius: 10px;
     margin-bottom: 2rem;
     border: 1px solid #1a2a4a;
+}
+
+section h2 , section h3 {
+    text-align: center;
 }
 
 h1,
@@ -99,6 +116,43 @@ h3 {
     color: var(--accent-blue);
     animation: blink 1s infinite;
 }
+
+
+.co-founder-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid var(--accent-blue);
+    box-shadow: var(--accent-glow);
+
+}
+
+.co-founder-img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+#co-founder {
+    text-align: left;
+    padding: 20px;
+    background: #0a1120;
+    border-radius: 10px;
+    border: 1px solid var(--accent-blue);
+    margin-top: 20px;
+}
+
+.co-founder-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding:10px;
+}
+
+.co-founder-info {
+    text-align: left;
+    margin-left: 20px;
+}
+
 
 @keyframes blink {
     50% { opacity: 0; }
@@ -148,6 +202,36 @@ h3 {
     height: auto;
     display: block;
 }
+
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service-card {
+    background: #0d1626;
+    border: 1px solid #1a2a4a;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    color: var(--accent-blue);
+    margin-bottom: 15px;
+}
+
+.service-card:hover {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+}
+
 
 footer {
     text-align: center;
@@ -264,8 +348,7 @@ footer {
 
     .hero-img {
         max-width: 220px;
-    }sudo npm install -g @google/gemini-cli
-
+    }
 
     footer {
         padding: 1.25rem 1rem;
