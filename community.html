@@ -35,11 +35,68 @@
             <p>Two comprehensive bootcamps are organized annually, tentatively in April and October[cite: 1]. Programs
                 cover penetration testing, web security, cloud security, bug bounty hunting, secure coding, and security
                 operations[cite: 1]. Revenue is generated through registrations, sponsorships, and premium lab access.
-            </p>
+            </p> <br>
+
+
+            
+            <h3>Community Engagement</h3>
+            <div class="community-btn">
+            <a href="#community-form">
+                <button >Join Community</button>
+            </a>
+
+            <a href="#bootcamp-form">
+                <button >Register for Bootcamp</button>
+            </a>
+
+        </div>
         </section>
     </main> <br>
 
 
+
+    <!-- Join Community Section -->
+     <main>
+    <section id="community-form">
+        <h2>Join Our Cybersecurity Community</h2>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="text" name="course" placeholder="Course of Choice" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="contact" placeholder="Contact Number" required>
+        
+            <select name="experience" required>
+                <option value="">Select Level of Experience</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        
+            <textarea name="why_enroll" placeholder="Why do you want to enroll?" required></textarea>
+            <textarea name="what_to_gain" placeholder="What do you stand to gain from the bootcamp?" required></textarea>
+        
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+     </main>
+    
+    <main>
+    <!-- Bootcamp Registration Section -->
+    <section id="bootcamp-form" style="margin-top: 40px;">
+        <h2>Register for Bootcamp</h2>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="contact" placeholder="Contact Number (eg. +234-123456789)" required>
+        
+            <textarea name="why_join" placeholder="Why do you want to join?" required></textarea>
+            <textarea name="what_to_bring" placeholder="What can you bring to the table?" required></textarea>
+            <textarea name="how_we_help" placeholder="How can the community help you?" required></textarea>
+        
+            <button type="submit">Join Community</button>
+        </form>
+    </section> <br>
+</main>
     <footer>
         <p>&copy; 2026 TalkCyber360 | All rights reserved</p>
     </footer>
